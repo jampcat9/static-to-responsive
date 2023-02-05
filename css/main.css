@@ -9,6 +9,7 @@ body {
 	color: #000000;
 }
 
+
 /* The width property has been changed to max-width */
 .content-wrapper {
 	max-width: 1200px;
@@ -171,11 +172,67 @@ footer span {
 
 /*-----TABLET STYLES-----*/
 @media all and (min-width: 768px) {
+	.bottom-section .content-wrapper {
+		border-top: 5px solid #EEE;
+		border-bottom: 5px solid #EEE;
+		width: 90%;
+		justify-content: space-evenly;
+	}
+	
+	.section-one,
+	.section-two,
+	.section-three {
+		box-sizing: border-box;
+		width: 30%;
+	
+	}
 
-}
+	.section-two {
+		border-left: 5px solid #EEE;
+		border-right: 5px solid #EEE;
+		border-top: none;
+		border-bottom: none;
+		padding: 0 30px;
+		width: 40%;
+	}
+	.section-three {
+		padding-left: 15px;
+	}
+	}
+
+
 
 /*-----DESKTOP STYLES-----*/
 @media all and (min-width: 1200px) {
+	body {
+		font-size: 1em;
+	}
+	header .content-wrapper {
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px;
+	}
 
+	header h1 {
+		margin: 0;
+		width: 25%;
+		border-bottom: none;
+		text-align: center;
+	}
 
+	header nav {
+		width: 21%;
+		padding: 38px 0 20px 0;
+		align-items: center;
+		text-align: center;
+	}
+	
+	header nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none; 
+		display: flex;
+		justify-content: space-between;
+
+	}
 }
